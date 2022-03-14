@@ -75,7 +75,7 @@ we <= '0';
 
 wait for 20ns;
 A <= "00000010";
-data_sti <= "00000001";
+data_sti <= "00001111";
 we <= '1';
 wait for CLK_PERIOD;
 we <= '0';

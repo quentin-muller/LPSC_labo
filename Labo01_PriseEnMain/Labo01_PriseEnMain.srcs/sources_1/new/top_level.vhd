@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 08.03.2022 17:58:35
+-- Create Date: 14.03.2022 14:27:57
 -- Design Name: 
 -- Module Name: top_level - Behavioral
 -- Project Name: 
@@ -28,12 +28,13 @@ use work.package_vhdl.all;
 use work.memory.all;
 use work.edge_detector.all;
 
+
 entity top_level is
-    Port ( LedxDO : out STD_LOGIC_VECTOR (7 downto 0);
+    Port ( clk : in STD_LOGIC;
+           LedxDO : out STD_LOGIC_VECTOR (7 downto 0);
            BtnDxSI : in STD_LOGIC;
            ResetxRI : in STD_LOGIC;
-           SwitchxDI : in STD_LOGIC_VECTOR (7 downto 0);
-           clk : in STD_LOGIC);
+           SwitchxDI : in STD_LOGIC_VECTOR (7 downto 0));
 end top_level;
 
 architecture Behavioral of top_level is

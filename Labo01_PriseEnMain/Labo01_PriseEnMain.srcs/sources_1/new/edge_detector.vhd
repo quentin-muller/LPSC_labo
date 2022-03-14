@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 08.03.2022 18:23:54
+-- Create Date: 14.03.2022 14:23:21
 -- Design Name: 
 -- Module Name: edge_detector - Behavioral
 -- Project Name: 
@@ -37,7 +37,7 @@ entity edge_detector is
     Port ( clk : in STD_LOGIC;
            rst : in STD_LOGIC;
            data_i : in STD_LOGIC;
-           data_o : out std_logic);
+           data_o : out STD_LOGIC);
 end edge_detector;
 
 architecture Behavioral of edge_detector is
