@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_topLevel_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="package_vhdl" />
+            <top_module name="tb_topLevel" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="104.001 ns"></ZoomEndTime>
+      <Cursor1Time time="8,287,260.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="221"></NameColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb_topLevel/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/rst_sti" type="logic">
+      <obj_property name="ElementShortName">rst_sti</obj_property>
+      <obj_property name="ObjectShortName">rst_sti</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/btn_sti" type="logic">
+      <obj_property name="ElementShortName">btn_sti</obj_property>
+      <obj_property name="ObjectShortName">btn_sti</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/sw_sti" type="array">
+      <obj_property name="ElementShortName">sw_sti[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_sti[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/led_obs" type="array">
+      <obj_property name="ElementShortName">led_obs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_obs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/tl_inst/edge_detect_inst/data_s" type="logic">
+      <obj_property name="ElementShortName">data_s</obj_property>
+      <obj_property name="ObjectShortName">data_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/tl_inst/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/tl_inst/n_state" type="other">
+      <obj_property name="ElementShortName">n_state</obj_property>
+      <obj_property name="ObjectShortName">n_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_topLevel/tl_inst/virtual_BtnLed/probe_out0" type="array">
+      <obj_property name="ElementShortName">probe_out0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">probe_out0[0:0]</obj_property>
+   </wvobject>
+</wave_config>
