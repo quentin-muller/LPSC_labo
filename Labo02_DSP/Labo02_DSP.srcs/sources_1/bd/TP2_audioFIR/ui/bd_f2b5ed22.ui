@@ -1,0 +1,50 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.56897",
+   "Default View_TopLeft":"-117,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_SC_SDOUT -pg 1 -lvl 5 -x 1010 -y 450 -defaultsOSRD
+preplace port port-id_SC_SCLK -pg 1 -lvl 5 -x 1010 -y 480 -defaultsOSRD
+preplace port port-id_SC_MCLK -pg 1 -lvl 5 -x 1010 -y 510 -defaultsOSRD
+preplace port port-id_SC_LRCK -pg 1 -lvl 5 -x 1010 -y 540 -defaultsOSRD
+preplace port port-id_MIC_SCLK -pg 1 -lvl 5 -x 1010 -y 60 -defaultsOSRD
+preplace port port-id_MIC_nCS -pg 1 -lvl 5 -x 1010 -y 90 -defaultsOSRD
+preplace port port-id_MIC_DONE -pg 1 -lvl 5 -x 1010 -y 120 -defaultsOSRD
+preplace port port-id_SDATA -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus Led_0 -pg 1 -lvl 5 -x 1010 -y 420 -defaultsOSRD
+preplace inst Speakerctrl_0 -pg 1 -lvl 3 -x 620 -y 470 -defaultsOSRD
+preplace inst clk_100M_50M -pg 1 -lvl 1 -x 110 -y 200 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 350 -y 250 -defaultsOSRD
+preplace inst PmodMICRefComp_0 -pg 1 -lvl 4 -x 880 -y 90 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 4 -x 880 -y 300 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 350 -y 390 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 110 -y 310 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 110 -y 410 -defaultsOSRD
+preplace netloc PmodMICRefComp_0_DONE 1 4 1 NJ 120
+preplace netloc PmodMICRefComp_0_SCLK 1 4 1 NJ 60
+preplace netloc PmodMICRefComp_0_nCS 1 4 1 990J 80n
+preplace netloc SDATA_0_1 1 0 4 NJ 100 NJ 100 NJ 100 NJ
+preplace netloc Speakerctrl_0_LRCK 1 3 2 770 540 NJ
+preplace netloc Speakerctrl_0_Led 1 3 2 NJ 420 NJ
+preplace netloc Speakerctrl_0_MCLK 1 3 2 760 510 NJ
+preplace netloc Speakerctrl_0_SCLK 1 3 2 750 480 NJ
+preplace netloc Speakerctrl_0_SDOUT 1 3 2 740 450 NJ
+preplace netloc Speakerctrl_0_done 1 3 1 730 120n
+preplace netloc audio_in_0_1 1 2 2 510 260 N
+preplace netloc clk_1 1 0 1 NJ 210
+preplace netloc clk_100M_50M_clk_out1 1 1 3 NJ 190 490 190 770
+preplace netloc clk_100M_50M_locked 1 1 1 200J 210n
+preplace netloc reset_1 1 0 1 20J 180n
+preplace netloc util_vector_logic_0_Res 1 2 2 500 80 NJ
+preplace netloc xlconstant_0_dout 1 1 1 200J 310n
+preplace netloc PmodMICRefComp_0_DATA 1 1 4 210 180 NJ 180 NJ 180 990
+preplace netloc xlconstant_1_dout 1 1 1 NJ 410
+levelinfo -pg 1 0 110 350 620 880 1010
+pagesize -pg 1 -db -bbox -sgen -100 0 1130 580
+"
+}
+0

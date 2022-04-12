@@ -1,0 +1,401 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3AE55193C2541A48",
+      "device": "xc7a200tsbg484-1",
+      "gen_directory": "../../../../Labo02_DSP.gen/sources_1/bd/TP2_audioFIR",
+      "name": "TP2_audioFIR",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Speakerctrl_0": "",
+      "clk_100M_50M": "",
+      "util_vector_logic_0": "",
+      "PmodMICRefComp_0": "",
+      "ila_0": "",
+      "xlconcat_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": ""
+    },
+    "ports": {
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "TP2_audioFIR_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "Led_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "SC_SDOUT": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "SC_SCLK": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "SC_MCLK": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "SC_LRCK": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "MIC_SCLK": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "MIC_nCS": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "MIC_DONE": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "SDATA": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "Speakerctrl_0": {
+        "vlnv": "xilinx.com:user:Speakerctrl:1.0",
+        "xci_name": "TP2_audioFIR_Speakerctrl_0_0",
+        "xci_path": "ip\\TP2_audioFIR_Speakerctrl_0_0\\TP2_audioFIR_Speakerctrl_0_0.xci",
+        "inst_hier_path": "Speakerctrl_0"
+      },
+      "clk_100M_50M": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "TP2_audioFIR_clk_wiz_0_0",
+        "xci_path": "ip\\TP2_audioFIR_clk_wiz_0_0\\TP2_audioFIR_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_100M_50M",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "151.636"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "20.000"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "100.000"
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "TP2_audioFIR_util_vector_logic_0_0",
+        "xci_path": "ip\\TP2_audioFIR_util_vector_logic_0_0\\TP2_audioFIR_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "PmodMICRefComp_0": {
+        "vlnv": "xilinx.com:user:PmodMICRefComp:1.0",
+        "xci_name": "TP2_audioFIR_PmodMICRefComp_0_0",
+        "xci_path": "ip\\TP2_audioFIR_PmodMICRefComp_0_0\\TP2_audioFIR_PmodMICRefComp_0_0.xci",
+        "inst_hier_path": "PmodMICRefComp_0"
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "TP2_audioFIR_ila_0_0",
+        "xci_path": "ip\\TP2_audioFIR_ila_0_0\\TP2_audioFIR_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "6"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TP2_audioFIR_xlconcat_0_0",
+        "xci_path": "ip\\TP2_audioFIR_xlconcat_0_0\\TP2_audioFIR_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "3"
+          },
+          "IN1_WIDTH": {
+            "value": "12"
+          },
+          "IN2_WIDTH": {
+            "value": "1"
+          },
+          "NUM_PORTS": {
+            "value": "3"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "TP2_audioFIR_xlconstant_0_0",
+        "xci_path": "ip\\TP2_audioFIR_xlconstant_0_0\\TP2_audioFIR_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "3"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "TP2_audioFIR_xlconstant_0_1",
+        "xci_path": "ip\\TP2_audioFIR_xlconstant_0_1\\TP2_audioFIR_xlconstant_0_1.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "PmodMICRefComp_0_DATA": {
+        "ports": [
+          "PmodMICRefComp_0/DATA",
+          "xlconcat_0/In1"
+        ]
+      },
+      "PmodMICRefComp_0_DONE": {
+        "ports": [
+          "PmodMICRefComp_0/DONE",
+          "MIC_DONE"
+        ]
+      },
+      "PmodMICRefComp_0_SCLK": {
+        "ports": [
+          "PmodMICRefComp_0/SCLK",
+          "MIC_SCLK"
+        ]
+      },
+      "PmodMICRefComp_0_nCS": {
+        "ports": [
+          "PmodMICRefComp_0/nCS",
+          "MIC_nCS"
+        ]
+      },
+      "SDATA_0_1": {
+        "ports": [
+          "SDATA",
+          "PmodMICRefComp_0/SDATA"
+        ]
+      },
+      "Speakerctrl_0_LRCK": {
+        "ports": [
+          "Speakerctrl_0/LRCK",
+          "SC_LRCK",
+          "ila_0/probe5"
+        ]
+      },
+      "Speakerctrl_0_Led": {
+        "ports": [
+          "Speakerctrl_0/Led",
+          "Led_0"
+        ]
+      },
+      "Speakerctrl_0_MCLK": {
+        "ports": [
+          "Speakerctrl_0/MCLK",
+          "SC_MCLK",
+          "ila_0/probe4"
+        ]
+      },
+      "Speakerctrl_0_SCLK": {
+        "ports": [
+          "Speakerctrl_0/SCLK",
+          "SC_SCLK",
+          "ila_0/probe3"
+        ]
+      },
+      "Speakerctrl_0_SDOUT": {
+        "ports": [
+          "Speakerctrl_0/SDOUT",
+          "SC_SDOUT",
+          "ila_0/probe2"
+        ]
+      },
+      "Speakerctrl_0_done": {
+        "ports": [
+          "Speakerctrl_0/done",
+          "PmodMICRefComp_0/START",
+          "ila_0/probe1"
+        ]
+      },
+      "audio_in_0_1": {
+        "ports": [
+          "xlconcat_0/dout",
+          "Speakerctrl_0/audio_in",
+          "ila_0/probe0"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clk_100M_50M/clk_in1"
+        ]
+      },
+      "clk_100M_50M_clk_out1": {
+        "ports": [
+          "clk_100M_50M/clk_out1",
+          "Speakerctrl_0/clk",
+          "PmodMICRefComp_0/CLK",
+          "ila_0/clk"
+        ]
+      },
+      "clk_100M_50M_locked": {
+        "ports": [
+          "clk_100M_50M/locked",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_100M_50M/reset"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "Speakerctrl_0/rst",
+          "PmodMICRefComp_0/RST"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "xlconcat_0/In0"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "xlconcat_0/In2"
+        ]
+      }
+    }
+  }
+}
