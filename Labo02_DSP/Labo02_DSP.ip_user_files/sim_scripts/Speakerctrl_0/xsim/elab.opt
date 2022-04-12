@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot Speakerctrl_0 xil_defaultlib.Speakerctrl_0 -log elaborate.log

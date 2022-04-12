@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../../Labo02_DSP.gen/sources_1/bd/TP2_audioFIR/ipshared/62b6" --include "../../../../Labo02_DSP.gen/sources_1/bd/TP2_audioFIR/ipshared/1b7e/hdl/verilog" --include "../../../../Labo02_DSP.gen/sources_1/bd/TP2_audioFIR/ipshared/122e/hdl/verilog" --include "../../../../Labo02_DSP.gen/sources_1/bd/TP2_audioFIR/ipshared/b205/hdl/verilog" --include "../../../../Labo02_DSP.gen/sources_1/bd/TP2_audioFIR/ipshared/fd26/hdl/verilog" \
+"../../../bd/TP2_audioFIR/ip/TP2_audioFIR_xlconcat_0_0/sim/TP2_audioFIR_xlconcat_0_0.v" \
+"../../../bd/TP2_audioFIR/ip/TP2_audioFIR_xlconstant_0_0/sim/TP2_audioFIR_xlconstant_0_0.v" \
+"../../../bd/TP2_audioFIR/ip/TP2_audioFIR_xlconstant_0_1/sim/TP2_audioFIR_xlconstant_0_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,48 +1,20 @@
+!.gitignore
 
-*.wpc
-*.xml
-*.lpr
-*.xci
-*.dcp
-\ip\*
-*.v
-*.db
-*.wdf
-*.vh
-*.veo
-*.vho
-*.xdc
-*.bak
-*.ini
-*.pb
-*.rlx
-*.vdb
-*.udo
-*.f
-*.opt
-*.tcl
-*.prj
-*.rst
-*.js
-*.bat
-*.vds
-*.jou
-Labo01_PriseEnMain/Labo01_PriseEnMain.runs/vio_0_synth_1/__synthesis_is_complete__
-*.rpt
-*.wdb
-*.obj
-*.rtti
-*.mem
-*.svtype
-*.type
-*.xdbg
-*.log
-*.reloc
-*.exe
-*.dbg
-*.do
-*.sh
-*.txt
-*.vhdl
-*.c
-Labo01_PriseEnMain/Labo01_PriseEnMain.runs/synth_1/__synthesis_is_running__
+# exclude temporary files
+*~
+*.backup
+*.cache
+
+# exclude Vivado IDE log files
+vivado*.jou
+vivado*.log
+vivado*.str
+
+# exclude simulation and implementation files
+*.sim
+*.runs
+
+# exclude IP generated products, except .xci file
+*.srcs/*/ip/*/*
+!*.srcs/*/ip/*/*.xci
+
